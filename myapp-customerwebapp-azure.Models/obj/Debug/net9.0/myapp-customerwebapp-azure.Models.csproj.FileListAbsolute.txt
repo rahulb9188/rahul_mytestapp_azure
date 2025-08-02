@@ -1,0 +1,11 @@
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\bin\Debug\net9.0\myapp-customerwebapp-azure.Models.deps.json
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\bin\Debug\net9.0\myapp-customerwebapp-azure.Models.dll
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\bin\Debug\net9.0\myapp-customerwebapp-azure.Models.pdb
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\myapp-customerwebapp-azure.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\myapp-customerwebapp-azure.Models.AssemblyInfoInputs.cache
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\myapp-customerwebapp-azure.Models.AssemblyInfo.cs
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\myapp-customerwebapp-azure.Models.csproj.CoreCompileInputs.cache
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\myapp-customerwebapp-azure.Models.dll
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\refint\myapp-customerwebapp-azure.Models.dll
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\myapp-customerwebapp-azure.Models.pdb
+C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Models\obj\Debug\net9.0\ref\myapp-customerwebapp-azure.Models.dll

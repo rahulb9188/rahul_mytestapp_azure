@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

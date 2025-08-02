@@ -1,0 +1,35 @@
+[2025-07-13 19:41:45 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 19:41:45 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 19:41:46 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 19:41:46 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 19:41:46 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 19:41:46 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 19:41:46 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 19:41:46 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 19:41:46 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 19:42:16 | ThreadId: 9 | DBG] Connection id "0HNE2098JTD1T" accepted.
+[2025-07-13 19:42:16 | ThreadId: 14 | DBG] Connection id "0HNE2098JTD1T" started.
+[2025-07-13 19:42:16 | ThreadId: 14 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api - null null
+[2025-07-13 19:42:16 | ThreadId: 14 | DBG] 1 candidate(s) found for the request path '/api'
+[2025-07-13 19:42:16 | ThreadId: 14 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-13 19:42:16 | ThreadId: 14 | DBG] Static files was skipped as the request already matched an endpoint.
+[2025-07-13 19:42:16 | ThreadId: 14 | WRN] Failed to determine the https port for redirect.
+[2025-07-13 19:42:16 | ThreadId: 14 | INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-07-13 19:42:16 | ThreadId: 14 | INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-07-13 19:42:16 | ThreadId: 14 | DBG] Connection id "0HNE2098JTD1T" completed keep alive response.
+[2025-07-13 19:42:16 | ThreadId: 14 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api - 405 0 null 94.4802ms
+[2025-07-13 19:43:24 | ThreadId: 9 | DBG] Connection id "0HNE2098JTD1T" received FIN.
+[2025-07-13 19:43:24 | ThreadId: 15 | DBG] Connection id "0HNE2098JTD1T" disconnecting.
+[2025-07-13 19:43:24 | ThreadId: 15 | DBG] Connection id "0HNE2098JTD1T" stopped.
+[2025-07-13 19:43:24 | ThreadId: 9 | DBG] Connection id "0HNE2098JTD1T" sending FIN because: "The Socket transport's send loop completed gracefully."

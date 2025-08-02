@@ -1,0 +1,443 @@
+[2025-07-13 16:20:17 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:20:18 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:20:18 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:20:18 | ThreadId: 8 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:20:18 | ThreadId: 9 | INF] Request starting HTTP/2 GET https://localhost:44368/ - null null
+[2025-07-13 16:20:18 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:20:18 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:20:18 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:20:18 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] 2 candidate(s) found for the request path '/'
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'null' for the request path '/'
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/'
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/'
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] Request matched endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] Matched endpoint 'Fallback {*path:nonfile}' is a fallback endpoint.
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:20:19 | ThreadId: 9 | INF] Executing endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:20:19 | ThreadId: 9 | DBG] The request path //index.html does not match an existing file
+[2025-07-13 16:20:19 | ThreadId: 9 | INF] Executed endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:20:19 | ThreadId: 15 | DBG] Connection ID "18374686493361831948" disconnecting.
+[2025-07-13 16:20:19 | ThreadId: 9 | INF] Request finished HTTP/2 GET https://localhost:44368//index.html - 404 null null 808.1031ms
+[2025-07-13 16:20:19 | ThreadId: 9 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368//index.html, Response status code: 404
+[2025-07-13 16:20:41 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:20:41 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:20:41 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:20:41 | ThreadId: 9 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:20:41 | ThreadId: 1 | INF] Now listening on: https://localhost:7206
+[2025-07-13 16:20:41 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:20:41 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:20:41 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:20:41 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:20:41 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:25:53 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:25:53 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:25:53 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:25:53 | ThreadId: 9 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:25:53 | ThreadId: 9 | INF] Request starting HTTP/2 GET https://localhost:44368/ - null null
+[2025-07-13 16:25:53 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:25:53 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:25:53 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:25:53 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:25:53 | ThreadId: 8 | DBG] 2 candidate(s) found for the request path '/'
+[2025-07-13 16:25:53 | ThreadId: 8 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'null' for the request path '/'
+[2025-07-13 16:25:53 | ThreadId: 8 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/'
+[2025-07-13 16:25:53 | ThreadId: 8 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/'
+[2025-07-13 16:25:53 | ThreadId: 8 | DBG] Request matched endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:25:53 | ThreadId: 8 | DBG] Matched endpoint 'Fallback {*path:nonfile}' is a fallback endpoint.
+[2025-07-13 16:25:54 | ThreadId: 8 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:25:54 | ThreadId: 8 | INF] Executing endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:25:54 | ThreadId: 8 | DBG] The request path //index.html does not match an existing file
+[2025-07-13 16:25:54 | ThreadId: 8 | INF] Executed endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:25:54 | ThreadId: 14 | DBG] Connection ID "18230571296696041478" disconnecting.
+[2025-07-13 16:25:54 | ThreadId: 8 | INF] Request finished HTTP/2 GET https://localhost:44368//index.html - 404 null null 507.6505ms
+[2025-07-13 16:25:54 | ThreadId: 8 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368//index.html, Response status code: 404
+[2025-07-13 16:26:09 | ThreadId: 8 | INF] Request starting HTTP/2 GET https://localhost:44368/api/weatherforecast - null null
+[2025-07-13 16:26:09 | ThreadId: 5 | DBG] 3 candidate(s) found for the request path '/api/weatherforecast'
+[2025-07-13 16:26:09 | ThreadId: 5 | DBG] Endpoint 'myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController.Get (myapp-customerwebapp-azure.Server)' with route pattern 'api/WeatherForecast' is valid for the request path '/api/weatherforecast'
+[2025-07-13 16:26:09 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'api/weatherforecast' for the request path '/api/weatherforecast'
+[2025-07-13 16:26:09 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/api/weatherforecast'
+[2025-07-13 16:26:09 | ThreadId: 5 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/api/weatherforecast'
+[2025-07-13 16:26:09 | ThreadId: 5 | DBG] Request matched endpoint 'myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController.Get (myapp-customerwebapp-azure.Server)'
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:26:10 | ThreadId: 5 | INF] Executing endpoint 'myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController.Get (myapp-customerwebapp-azure.Server)'
+[2025-07-13 16:26:10 | ThreadId: 5 | INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[myapp_customerwebapp_azure.Server.WeatherForecast] Get() on controller myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController (myapp-customerwebapp-azure.Server).
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Execution plan of authorization filters (in the following order): ["None"]
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Execution plan of resource filters (in the following order): ["None"]
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Execution plan of exception filters (in the following order): ["None"]
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Executing controller factory for controller myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController (myapp-customerwebapp-azure.Server)
+[2025-07-13 16:26:10 | ThreadId: 5 | DBG] Executed controller factory for controller myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController (myapp-customerwebapp-azure.Server)
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] No information found on request to perform content negotiation.
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Executing ObjectResult, writing value of type 'myapp_customerwebapp_azure.Server.WeatherForecast[]'.
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Executed action myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController.Get (myapp-customerwebapp-azure.Server) in 2639.7821ms
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Executed endpoint 'myapp_customerwebapp_azure.Server.Controllers.WeatherForecastController.Get (myapp-customerwebapp-azure.Server)'
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Request finished HTTP/2 GET https://localhost:44368/api/weatherforecast - 200 null application/json; charset=utf-8 2814.5099ms
+[2025-07-13 16:26:12 | ThreadId: 19 | DBG] Connection ID "18374686527721570308" disconnecting.
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Request starting HTTP/2 GET https://localhost:44368/favicon.ico - null null
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] 2 candidate(s) found for the request path '/favicon.ico'
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'favicon.ico' for the request path '/favicon.ico'
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/favicon.ico'
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' was rejected by constraint 'path':'Microsoft.AspNetCore.Routing.Constraints.NonFileNameRouteConstraint' with value 'favicon.ico' for the request path '/favicon.ico'
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is not valid for the request path '/favicon.ico'
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] Request did not match any endpoints
+[2025-07-13 16:26:12 | ThreadId: 5 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Request finished HTTP/2 GET https://localhost:44368/favicon.ico - 404 null null 17.4419ms
+[2025-07-13 16:26:12 | ThreadId: 15 | DBG] Connection ID "18230571296696041480" disconnecting.
+[2025-07-13 16:26:12 | ThreadId: 5 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368/favicon.ico, Response status code: 404
+[2025-07-13 16:31:04 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:31:04 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:31:05 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:31:05 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:31:05 | ThreadId: 5 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:31:05 | ThreadId: 9 | INF] Request starting HTTP/2 GET https://localhost:44368/ - null null
+[2025-07-13 16:31:05 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:31:05 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:31:05 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:31:05 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] 2 candidate(s) found for the request path '/'
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'null' for the request path '/'
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/'
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/'
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] Request matched endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] Matched endpoint 'Fallback {*path:nonfile}' is a fallback endpoint.
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:31:05 | ThreadId: 9 | INF] Executing endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:31:05 | ThreadId: 9 | DBG] The request path //index.html does not match an existing file
+[2025-07-13 16:31:05 | ThreadId: 9 | INF] Executed endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:31:05 | ThreadId: 14 | DBG] Connection ID "18374686523426603018" disconnecting.
+[2025-07-13 16:31:05 | ThreadId: 9 | INF] Request finished HTTP/2 GET https://localhost:44368//index.html - 404 null null 293.5328ms
+[2025-07-13 16:31:05 | ThreadId: 9 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368//index.html, Response status code: 404
+[2025-07-13 16:31:46 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:31:46 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:31:46 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:31:46 | ThreadId: 5 | INF] Request starting HTTP/2 GET https://localhost:44368/ - null null
+[2025-07-13 16:31:46 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:31:46 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:31:46 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:31:46 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] 2 candidate(s) found for the request path '/'
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'null' for the request path '/'
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/'
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/'
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Request matched endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] Matched endpoint 'Fallback {*path:nonfile}' is a fallback endpoint.
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:31:46 | ThreadId: 8 | INF] Executing endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:31:46 | ThreadId: 8 | DBG] The request path //index.html does not match an existing file
+[2025-07-13 16:31:46 | ThreadId: 8 | INF] Executed endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:31:46 | ThreadId: 14 | DBG] Connection ID "18374686493361831951" disconnecting.
+[2025-07-13 16:31:46 | ThreadId: 8 | INF] Request finished HTTP/2 GET https://localhost:44368//index.html - 404 null null 325.2003ms
+[2025-07-13 16:31:46 | ThreadId: 8 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368//index.html, Response status code: 404
+[2025-07-13 16:35:16 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:35:16 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:35:16 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:35:16 | ThreadId: 9 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:35:16 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:35:17 | ThreadId: 1 | DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:35:17 | ThreadId: 1 | DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:35:17 | ThreadId: 8 | INF] Request starting HTTP/2 GET https://localhost:44368/ - null null
+[2025-07-13 16:35:17 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:35:17 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:35:17 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:35:17 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] 2 candidate(s) found for the request path '/'
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'null' for the request path '/'
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/'
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/'
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] Request matched endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] Matched endpoint 'Fallback {*path:nonfile}' is a fallback endpoint.
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:35:17 | ThreadId: 5 | INF] Executing endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:35:17 | ThreadId: 5 | DBG] The request path //index.html does not match an existing file
+[2025-07-13 16:35:17 | ThreadId: 5 | INF] Executed endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:35:17 | ThreadId: 14 | DBG] Connection ID "18374686514836668423" disconnecting.
+[2025-07-13 16:35:17 | ThreadId: 5 | INF] Request finished HTTP/2 GET https://localhost:44368//index.html - 404 null null 300.4163ms
+[2025-07-13 16:35:17 | ThreadId: 5 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368//index.html, Response status code: 404
+[2025-07-13 16:46:43 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:46:43 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:46:43 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:46:43 | ThreadId: 9 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+[2025-07-13 16:46:43 | ThreadId: 8 | INF] Request starting HTTP/2 GET https://localhost:44368/ - null null
+[2025-07-13 16:46:43 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:46:43 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:46:43 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:46:43 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] 2 candidate(s) found for the request path '/'
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' was rejected by constraint 'path':'Microsoft.AspNetCore.Builder.StaticAssetDevelopmentRuntimeHandler+FileExistsConstraint' with value 'null' for the request path '/'
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] Endpoint 'Fallback {**path:file}' with route pattern '{**path:file}' is not valid for the request path '/'
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] Endpoint 'Fallback {*path:nonfile}' with route pattern '{*path:nonfile}' is valid for the request path '/'
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] Request matched endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] Matched endpoint 'Fallback {*path:nonfile}' is a fallback endpoint.
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-13 16:46:44 | ThreadId: 5 | INF] Executing endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:46:44 | ThreadId: 5 | DBG] The request path //index.html does not match an existing file
+[2025-07-13 16:46:44 | ThreadId: 5 | INF] Executed endpoint 'Fallback {*path:nonfile}'
+[2025-07-13 16:46:44 | ThreadId: 14 | DBG] Connection ID "18302628933683642372" disconnecting.
+[2025-07-13 16:46:44 | ThreadId: 5 | INF] Request finished HTTP/2 GET https://localhost:44368//index.html - 404 null null 436.2941ms
+[2025-07-13 16:46:44 | ThreadId: 5 | INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44368//index.html, Response status code: 404
+[2025-07-13 16:47:25 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:47:26 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:47:26 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-13 16:47:26 | ThreadId: 8 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:47:26 | ThreadId: 1 | INF] Now listening on: https://localhost:7206
+[2025-07-13 16:47:26 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:47:26 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:47:26 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:47:26 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:47:26 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:51:37 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:51:37 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:51:37 | ThreadId: 1 | INF] Now listening on: https://localhost:7206
+[2025-07-13 16:51:37 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:51:37 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:51:37 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:51:37 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:51:37 | ThreadId: 1 | DBG] Hosting started
+[2025-07-13 16:57:54 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-13 16:57:54 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-13 16:57:54 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-13 16:57:54 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-13 16:57:55 | ThreadId: 1 | INF] Now listening on: https://localhost:7206
+[2025-07-13 16:57:55 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-13 16:57:55 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-13 16:57:55 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-13 16:57:55 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-13 16:57:55 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-13 16:57:55 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-13 16:57:55 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-13 16:57:55 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-13 16:57:55 | ThreadId: 1 | DBG] Hosting started

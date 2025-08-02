@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|c:\\users\\hp spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.server\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|solutionrelative:myapp-customerwebapp-azure.server\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|c:\\users\\hp spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|solutionrelative:myapp-customerwebapp-azure.server\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|c:\\users\\hp spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|solutionrelative:myapp-customerwebapp-azure.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|c:\\users\\hp spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|solutionrelative:myapp-customerwebapp-azure.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|c:\\users\\hp spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|solutionrelative:myapp-customerwebapp-azure.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|c:\\users\\hp spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.server\\myapp-customerwebapp-azure.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{23823443-9886-42CB-87CE-7ACA588AF141}|myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj|solutionrelative:myapp-customerwebapp-azure.server\\myapp-customerwebapp-azure.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Program.cs",
+              "RelativeDocumentMoniker": "myapp-customerwebapp-azure.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Program.cs",
+              "RelativeToolTip": "myapp-customerwebapp-azure.Server\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T11:45:03.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "myapp-customerwebapp-azure.Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "myapp-customerwebapp-azure.Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T11:41:25.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "myapp-customerwebapp-azure.Server\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "myapp-customerwebapp-azure.Server\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T11:43:30.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "myapp-customerwebapp-azure.Server\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "myapp-customerwebapp-azure.Server\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAEwA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T11:41:26.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "myapp-customerwebapp-azure.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "myapp-customerwebapp-azure.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T11:41:10.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "myapp-customerwebapp-azure.Server.csproj",
+              "DocumentMoniker": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj",
+              "RelativeDocumentMoniker": "myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj",
+              "ToolTip": "C:\\Users\\Hp Spectre\\source\\repos\\myapp-customerwebapp-azure\\myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj",
+              "RelativeToolTip": "myapp-customerwebapp-azure.Server\\myapp-customerwebapp-azure.Server.csproj",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T11:40:32.405Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

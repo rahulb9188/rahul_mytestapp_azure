@@ -1,0 +1,587 @@
+[2025-07-15 19:41:29 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:41:29 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-15 19:41:29 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:41:29 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-15 19:41:29 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-15 19:41:29 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-15 19:41:29 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-15 19:41:30 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-15 19:41:30 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-15 19:41:30 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-15 19:41:30 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-15 19:41:30 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-15 19:41:30 | ThreadId: 1 | DBG] Hosting started
+[2025-07-15 19:41:34 | ThreadId: 5 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.IsSpaProxyRunning(CancellationToken cancellationToken)
+[2025-07-15 19:41:34 | ThreadId: 5 | INF] No SPA development server running at https://localhost:61392 found.
+[2025-07-15 19:41:34 | ThreadId: 5 | DBG] Watch process 'System.Diagnostics.Process (powershell)' started.
+[2025-07-15 19:41:38 | ThreadId: 9 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.ProbeSpaDevelopmentServerUrl(HttpClient httpClient, CancellationToken cancellationToken)
+[2025-07-15 19:41:43 | ThreadId: 8 | INF] SPA development server running at 'https://localhost:61392'
+[2025-07-15 19:44:32 | ThreadId: 5 | DBG] Connection id "0HNE3IJRMISN8" accepted.
+[2025-07-15 19:44:33 | ThreadId: 16 | DBG] Connection id "0HNE3IJRMISN8" started.
+[2025-07-15 19:44:33 | ThreadId: 16 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account - null null
+[2025-07-15 19:44:33 | ThreadId: 16 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:44:33 | ThreadId: 16 | WRN] Failed to determine the https port for redirect.
+[2025-07-15 19:44:33 | ThreadId: 16 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:44:33 | ThreadId: 16 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:44:33 | ThreadId: 16 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:44:33 | ThreadId: 16 | INF] CORS policy execution failed.
+[2025-07-15 19:44:33 | ThreadId: 16 | INF] Request origin https://127.0.0.1:61392 does not have permission to access the resource.
+[2025-07-15 19:44:33 | ThreadId: 16 | DBG] Connection id "0HNE3IJRMISN8" completed keep alive response.
+[2025-07-15 19:44:33 | ThreadId: 16 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account - 204 null null 111.2984ms
+[2025-07-15 19:44:35 | ThreadId: 16 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account - null null
+[2025-07-15 19:44:35 | ThreadId: 16 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:44:35 | ThreadId: 16 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:44:35 | ThreadId: 16 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:44:35 | ThreadId: 16 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:44:35 | ThreadId: 16 | INF] CORS policy execution failed.
+[2025-07-15 19:44:35 | ThreadId: 16 | INF] Request origin https://127.0.0.1:61392 does not have permission to access the resource.
+[2025-07-15 19:44:35 | ThreadId: 16 | DBG] Connection id "0HNE3IJRMISN8" completed keep alive response.
+[2025-07-15 19:44:35 | ThreadId: 16 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account - 204 null null 3.9053ms
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account - null null
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] CORS policy execution failed.
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] Request origin https://127.0.0.1:61392 does not have permission to access the resource.
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] Connection id "0HNE3IJRMISN8" completed keep alive response.
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account - 204 null null 1.352ms
+[2025-07-15 19:44:36 | ThreadId: 17 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account - null null
+[2025-07-15 19:44:36 | ThreadId: 17 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:44:36 | ThreadId: 17 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:44:36 | ThreadId: 17 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:44:36 | ThreadId: 17 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:44:36 | ThreadId: 17 | INF] CORS policy execution failed.
+[2025-07-15 19:44:36 | ThreadId: 17 | INF] Request origin https://127.0.0.1:61392 does not have permission to access the resource.
+[2025-07-15 19:44:36 | ThreadId: 17 | DBG] Connection id "0HNE3IJRMISN8" completed keep alive response.
+[2025-07-15 19:44:36 | ThreadId: 17 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account - 204 null null 1.4482ms
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account - null null
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] CORS policy execution failed.
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] Request origin https://127.0.0.1:61392 does not have permission to access the resource.
+[2025-07-15 19:44:36 | ThreadId: 16 | DBG] Connection id "0HNE3IJRMISN8" completed keep alive response.
+[2025-07-15 19:44:36 | ThreadId: 16 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account - 204 null null 0.9266ms
+[2025-07-15 19:46:51 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-15 19:46:51 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-15 19:46:51 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-15 19:46:51 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-15 19:46:51 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-15 19:46:51 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-15 19:46:51 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-15 19:46:51 | ThreadId: 1 | DBG] Hosting started
+[2025-07-15 19:46:55 | ThreadId: 9 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.IsSpaProxyRunning(CancellationToken cancellationToken)
+[2025-07-15 19:46:55 | ThreadId: 9 | INF] No SPA development server running at https://localhost:61392 found.
+[2025-07-15 19:46:55 | ThreadId: 9 | DBG] Watch process 'System.Diagnostics.Process (powershell)' started.
+[2025-07-15 19:46:59 | ThreadId: 8 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.ProbeSpaDevelopmentServerUrl(HttpClient httpClient, CancellationToken cancellationToken)
+[2025-07-15 19:47:03 | ThreadId: 8 | INF] SPA development server running at 'https://localhost:61392'
+[2025-07-15 19:48:43 | ThreadId: 3 | DBG] Connection id "0HNE3IM6AFQOG" accepted.
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Connection id "0HNE3IM6AFQOG" started.
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account - null null
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:48:43 | ThreadId: 18 | WRN] Failed to determine the https port for redirect.
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] CORS policy execution successful.
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] The request is a preflight request.
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Connection id "0HNE3IM6AFQOG" completed keep alive response.
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account - 204 null null 154.9051ms
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] Request starting HTTP/1.1 POST http://localhost:5138/api/account - application/json 47
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] POST requests are not supported
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] 1 candidate(s) found for the request path '/api/account'
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] CORS policy execution successful.
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] Executing endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] Executed endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Connection id "0HNE3IM6AFQOG" completed keep alive response.
+[2025-07-15 19:48:43 | ThreadId: 18 | INF] Request finished HTTP/1.1 POST http://localhost:5138/api/account - 405 0 null 24.5129ms
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Connection id "0HNE3IM6AFQOG", Request id "0HNE3IM6AFQOG:00000002": started reading request body.
+[2025-07-15 19:48:43 | ThreadId: 18 | DBG] Connection id "0HNE3IM6AFQOG", Request id "0HNE3IM6AFQOG:00000002": done reading request body.
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - null null
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] CORS policy execution successful.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] The request is a preflight request.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Connection id "0HNE3IM6AFQOG" completed keep alive response.
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - 204 null null 4.3014ms
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] Request starting HTTP/1.1 POST http://localhost:5138/api/account/login - application/json 47
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] POST requests are not supported
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)' with route pattern 'api/Account/login' is valid for the request path '/api/account/login'
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Request matched endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] CORS policy execution successful.
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] Executing endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:50:21 | ThreadId: 3 | INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server).
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Execution plan of authorization filters (in the following order): ["None"]
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Execution plan of resource filters (in the following order): ["None"]
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Execution plan of exception filters (in the following order): ["None"]
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Executing controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Executed controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' using the name '' in request data ...
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Connection id "0HNE3IM6AFQOG", Request id "0HNE3IM6AFQOG:00000004": started reading request body.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Connection id "0HNE3IM6AFQOG", Request id "0HNE3IM6AFQOG:00000004": done reading request body.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] JSON input formatter succeeded, deserializing to type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:50:21 | ThreadId: 3 | DBG] Done attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:51:53 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-15 19:51:53 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-15 19:51:53 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-15 19:51:53 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-15 19:51:53 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-15 19:51:53 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-15 19:51:53 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-15 19:51:53 | ThreadId: 1 | DBG] Hosting started
+[2025-07-15 19:51:57 | ThreadId: 9 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.IsSpaProxyRunning(CancellationToken cancellationToken)
+[2025-07-15 19:51:57 | ThreadId: 9 | INF] No SPA development server running at https://localhost:61392 found.
+[2025-07-15 19:51:57 | ThreadId: 9 | DBG] Watch process 'System.Diagnostics.Process (powershell)' started.
+[2025-07-15 19:52:01 | ThreadId: 5 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.ProbeSpaDevelopmentServerUrl(HttpClient httpClient, CancellationToken cancellationToken)
+[2025-07-15 19:52:05 | ThreadId: 9 | INF] SPA development server running at 'https://localhost:61392'
+[2025-07-15 19:52:24 | ThreadId: 9 | DBG] Connection id "0HNE3IO82TH5A" accepted.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Connection id "0HNE3IO82TH5A" started.
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - null null
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:52:24 | ThreadId: 8 | WRN] Failed to determine the https port for redirect.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] CORS policy execution successful.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] The request is a preflight request.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Connection id "0HNE3IO82TH5A" completed keep alive response.
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - 204 null null 152.491ms
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] Request starting HTTP/1.1 POST http://localhost:5138/api/account/login - application/json 47
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] POST requests are not supported
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)' with route pattern 'api/Account/login' is valid for the request path '/api/account/login'
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Request matched endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] CORS policy execution successful.
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] Executing endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:52:24 | ThreadId: 8 | INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server).
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Execution plan of authorization filters (in the following order): ["None"]
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Execution plan of resource filters (in the following order): ["None"]
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Execution plan of exception filters (in the following order): ["None"]
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Executing controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Executed controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' using the name '' in request data ...
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Connection id "0HNE3IO82TH5A", Request id "0HNE3IO82TH5A:00000002": started reading request body.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Connection id "0HNE3IO82TH5A", Request id "0HNE3IO82TH5A:00000002": done reading request body.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] JSON input formatter succeeded, deserializing to type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:52:24 | ThreadId: 8 | DBG] Done attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:53:36 | ThreadId: 8 | INF] Executed action myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server) in 72575.7209ms
+[2025-07-15 19:53:36 | ThreadId: 8 | INF] Executed endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:53:36 | ThreadId: 8 | ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '168' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at myapp_customerwebapp_azure.Server.Controllers.AccountController.GenerateJwtToken(String username) in C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\Controllers\AccountController.cs:line 44
+   at myapp_customerwebapp_azure.Server.Controllers.AccountController.Login(LoginRequest user) in C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\Controllers\AccountController.cs:line 20
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-07-15 19:53:37 | ThreadId: 8 | DBG] Connection id "0HNE3IO82TH5A" completed keep alive response.
+[2025-07-15 19:53:37 | ThreadId: 8 | INF] Request finished HTTP/1.1 POST http://localhost:5138/api/account/login - 500 null text/plain; charset=utf-8 72740.9804ms
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - null null
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] CORS policy execution successful.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] The request is a preflight request.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A" completed keep alive response.
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - 204 null null 5.4155ms
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] Request starting HTTP/1.1 POST http://localhost:5138/api/account/login - application/json 47
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] POST requests are not supported
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)' with route pattern 'api/Account/login' is valid for the request path '/api/account/login'
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Request matched endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] CORS policy execution successful.
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] Executing endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:54:01 | ThreadId: 18 | INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server).
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Execution plan of authorization filters (in the following order): ["None"]
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Execution plan of resource filters (in the following order): ["None"]
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Execution plan of exception filters (in the following order): ["None"]
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Executing controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Executed controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' using the name '' in request data ...
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A", Request id "0HNE3IO82TH5A:00000004": started reading request body.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A", Request id "0HNE3IO82TH5A:00000004": done reading request body.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] JSON input formatter succeeded, deserializing to type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:54:01 | ThreadId: 18 | DBG] Done attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:54:29 | ThreadId: 18 | INF] Executed action myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server) in 27722.8748ms
+[2025-07-15 19:54:29 | ThreadId: 18 | INF] Executed endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:54:29 | ThreadId: 18 | ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '168' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at myapp_customerwebapp_azure.Server.Controllers.AccountController.GenerateJwtToken(String username) in C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\Controllers\AccountController.cs:line 44
+   at myapp_customerwebapp_azure.Server.Controllers.AccountController.Login(LoginRequest user) in C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\Controllers\AccountController.cs:line 20
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[2025-07-15 19:54:29 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A" completed keep alive response.
+[2025-07-15 19:54:29 | ThreadId: 18 | INF] Request finished HTTP/1.1 POST http://localhost:5138/api/account/login - 500 null text/plain; charset=utf-8 27756.7271ms
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - null null
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] CORS policy execution successful.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] The request is a preflight request.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A" completed keep alive response.
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - 204 null null 0.8229ms
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] Request starting HTTP/1.1 POST http://localhost:5138/api/account/login - application/json 47
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] POST requests are not supported
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)' with route pattern 'api/Account/login' is valid for the request path '/api/account/login'
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Request matched endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] CORS policy execution successful.
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] Executing endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:54:31 | ThreadId: 18 | INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server).
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Execution plan of authorization filters (in the following order): ["None"]
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Execution plan of resource filters (in the following order): ["None"]
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Execution plan of exception filters (in the following order): ["None"]
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Executing controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Executed controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' using the name '' in request data ...
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A", Request id "0HNE3IO82TH5A:00000006": started reading request body.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Connection id "0HNE3IO82TH5A", Request id "0HNE3IO82TH5A:00000006": done reading request body.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] JSON input formatter succeeded, deserializing to type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:54:31 | ThreadId: 18 | DBG] Done attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:56:54 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2025-07-15 19:56:54 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Hosting starting
+[2025-07-15 19:56:54 | ThreadId: 1 | INF] User profile is available. Using 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-2353922c-00ed-4320-b574-dd13db2adc4d.xml'.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-dd55db56-308d-4da2-ab1c-c8570cd0ffe9.xml'.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Reading data from file 'C:\Users\Hp Spectre\AppData\Local\ASP.NET\DataProtection-Keys\key-eff54f09-5690-4ca8-bcc1-3c63f0f6a56a.xml'.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Found key {2353922c-00ed-4320-b574-dd13db2adc4d}.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Found key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9}.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Found key {eff54f09-5690-4ca8-bcc1-3c63f0f6a56a}.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Considering key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} with expiration date 2025-10-11 07:51:42Z as default key.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Decrypting secret element using Windows DPAPI.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2025-07-15 19:56:54 | ThreadId: 8 | DBG] Using key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} as the default key.
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Key ring with default key {dd55db56-308d-4da2-ab1c-c8570cd0ffe9} was loaded during application startup.
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Middleware loaded
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16551 B).
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+[2025-07-15 19:56:54 | ThreadId: 1 | WRN] The WebRootPath was not found: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server\wwwroot. Static files may be unavailable.
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Wildcard detected, all requests with hosts will be allowed.
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+[2025-07-15 19:56:54 | ThreadId: 1 | INF] Now listening on: http://localhost:5138
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Loaded hosting startup assembly myapp-customerwebapp-azure.Server
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.SpaProxy
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+[2025-07-15 19:56:54 | ThreadId: 1 | INF] Application started. Press Ctrl+C to shut down.
+[2025-07-15 19:56:54 | ThreadId: 1 | INF] Hosting environment: Development
+[2025-07-15 19:56:54 | ThreadId: 1 | INF] Content root path: C:\Users\Hp Spectre\source\repos\myapp-customerwebapp-azure\myapp-customerwebapp-azure.Server
+[2025-07-15 19:56:54 | ThreadId: 1 | DBG] Hosting started
+[2025-07-15 19:56:58 | ThreadId: 8 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.IsSpaProxyRunning(CancellationToken cancellationToken)
+[2025-07-15 19:56:58 | ThreadId: 8 | INF] No SPA development server running at https://localhost:61392 found.
+[2025-07-15 19:56:58 | ThreadId: 8 | DBG] Watch process 'System.Diagnostics.Process (powershell)' started.
+[2025-07-15 19:57:02 | ThreadId: 8 | DBG] Failed to connect to the SPA Development proxy.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:61392)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.InjectNewHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.ProbeSpaDevelopmentServerUrl(HttpClient httpClient, CancellationToken cancellationToken)
+[2025-07-15 19:57:05 | ThreadId: 8 | INF] SPA development server running at 'https://localhost:61392'
+[2025-07-15 19:57:20 | ThreadId: 5 | DBG] Connection id "0HNE3IR09L07E" accepted.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Connection id "0HNE3IR09L07E" started.
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] Request starting HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - null null
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] OPTIONS requests are not supported
+[2025-07-15 19:57:20 | ThreadId: 9 | WRN] Failed to determine the https port for redirect.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Request matched endpoint '405 HTTP Method Not Supported'
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] CORS policy execution successful.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] The request is a preflight request.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Connection id "0HNE3IR09L07E" completed keep alive response.
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] Request finished HTTP/1.1 OPTIONS http://localhost:5138/api/account/login - 204 null null 128.4113ms
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] Request starting HTTP/1.1 POST http://localhost:5138/api/account/login - application/json 47
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] POST requests are not supported
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] 1 candidate(s) found for the request path '/api/account/login'
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)' with route pattern 'api/Account/login' is valid for the request path '/api/account/login'
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Request matched endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] The request has an origin header: 'https://127.0.0.1:61392'.
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] CORS policy execution successful.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] AuthenticationScheme: Bearer was not authenticated.
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] Executing endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:57:20 | ThreadId: 9 | INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Microsoft.AspNetCore.Identity.Data.LoginRequest) on controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server).
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Execution plan of authorization filters (in the following order): ["None"]
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Execution plan of resource filters (in the following order): ["None"]
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Execution plan of exception filters (in the following order): ["None"]
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Executing controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Executed controller factory for controller myapp_customerwebapp_azure.Server.Controllers.AccountController (myapp-customerwebapp-azure.Server)
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' using the name '' in request data ...
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Connection id "0HNE3IR09L07E", Request id "0HNE3IR09L07E:00000002": started reading request body.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Connection id "0HNE3IR09L07E", Request id "0HNE3IR09L07E:00000002": done reading request body.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] JSON input formatter succeeded, deserializing to type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Done attempting to bind parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest' ...
+[2025-07-15 19:57:20 | ThreadId: 9 | DBG] Done attempting to validate the bound parameter 'user' of type 'Microsoft.AspNetCore.Identity.Data.LoginRequest'.
+[2025-07-15 19:57:48 | ThreadId: 9 | DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2025-07-15 19:57:48 | ThreadId: 9 | DBG] No information found on request to perform content negotiation.
+[2025-07-15 19:57:48 | ThreadId: 9 | DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2025-07-15 19:57:48 | ThreadId: 9 | DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+[2025-07-15 19:57:48 | ThreadId: 9 | DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2025-07-15 19:57:48 | ThreadId: 9 | INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2025-07-15 19:57:48 | ThreadId: 9 | INF] Executed action myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server) in 27546.7063ms
+[2025-07-15 19:57:48 | ThreadId: 9 | INF] Executed endpoint 'myapp_customerwebapp_azure.Server.Controllers.AccountController.Login (myapp-customerwebapp-azure.Server)'
+[2025-07-15 19:57:48 | ThreadId: 9 | DBG] Connection id "0HNE3IR09L07E" completed keep alive response.
+[2025-07-15 19:57:48 | ThreadId: 9 | INF] Request finished HTTP/1.1 POST http://localhost:5138/api/account/login - 200 null application/json; charset=utf-8 27797.3117ms
+[2025-07-15 19:59:24 | ThreadId: 3 | DBG] Connection id "0HNE3IR09L07E" received FIN.
+[2025-07-15 19:59:24 | ThreadId: 3 | DBG] Connection id "0HNE3IR09L07E" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2025-07-15 19:59:24 | ThreadId: 3 | DBG] Connection id "0HNE3IR09L07E" disconnecting.
+[2025-07-15 19:59:24 | ThreadId: 18 | DBG] Connection id "0HNE3IR09L07E" stopped.

@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+.logo {
+  height: 40px;
+  fill: white;
+  filter: brightness(0) invert(1); /* Makes black SVG white */
+}

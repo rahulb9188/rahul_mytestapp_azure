@@ -1,0 +1,37 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/myapp-customerwebapp-azure.Application/obj
+/myapp-customerwebapp-azure.Infrastructure/bin/Debug/net9.0
+/myapp-customerwebapp-azure.Infrastructure/obj
+
+# Ignore build output folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Copilot cache / indices
+.copilot/
+
+# Rider IDE
+.idea/
+
+# Logs
+*.log
+
+# Azure Functions
+.local.settings.json
+
+# Others
+*.vs/
+
+/myapp-customerwebapp-azure.Server/Logs

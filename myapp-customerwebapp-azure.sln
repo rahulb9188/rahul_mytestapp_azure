@@ -7,7 +7,13 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "myapp-customerwebapp-azure.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myapp-customerwebapp-azure.Server", "myapp-customerwebapp-azure.Server\myapp-customerwebapp-azure.Server.csproj", "{23823443-9886-42CB-87CE-7ACA588AF141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myapp-customerwebapp-azure.Models", "myapp-customerwebapp-azure.Models\myapp-customerwebapp-azure.Models.csproj", "{31487A05-C10B-455C-AB10-B6A663FDC355}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myapp-customerwebapp-azure.Infrastructure", "myapp-customerwebapp-azure.Infrastructure\myapp-customerwebapp-azure.Infrastructure.csproj", "{7CC56FF7-3E4A-4376-8C59-309B3F80BB01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myapp-customerwebapp-azure.Domain", "myapp-customerwebapp-azure.Domain\myapp-customerwebapp-azure.Domain.csproj", "{796AEC86-B2CB-4AFF-8B2A-E6A4C138DAB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myapp-customerwebapp-azure.Shared", "myapp-customerwebapp-azure.Shared\myapp-customerwebapp-azure.Shared.csproj", "{BA4EFE7E-DAD6-49D5-AB93-045C7E61FA31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myapp-customerwebapp-azure.Application", "myapp-customerwebapp-azure.Application\myapp-customerwebapp-azure.Application.csproj", "{77BCAA89-4805-4E0A-8D7C-CF11B8F19ECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +31,22 @@ Global
 		{23823443-9886-42CB-87CE-7ACA588AF141}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23823443-9886-42CB-87CE-7ACA588AF141}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23823443-9886-42CB-87CE-7ACA588AF141}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31487A05-C10B-455C-AB10-B6A663FDC355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31487A05-C10B-455C-AB10-B6A663FDC355}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31487A05-C10B-455C-AB10-B6A663FDC355}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31487A05-C10B-455C-AB10-B6A663FDC355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC56FF7-3E4A-4376-8C59-309B3F80BB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC56FF7-3E4A-4376-8C59-309B3F80BB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC56FF7-3E4A-4376-8C59-309B3F80BB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC56FF7-3E4A-4376-8C59-309B3F80BB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796AEC86-B2CB-4AFF-8B2A-E6A4C138DAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796AEC86-B2CB-4AFF-8B2A-E6A4C138DAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796AEC86-B2CB-4AFF-8B2A-E6A4C138DAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796AEC86-B2CB-4AFF-8B2A-E6A4C138DAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA4EFE7E-DAD6-49D5-AB93-045C7E61FA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA4EFE7E-DAD6-49D5-AB93-045C7E61FA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA4EFE7E-DAD6-49D5-AB93-045C7E61FA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA4EFE7E-DAD6-49D5-AB93-045C7E61FA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BCAA89-4805-4E0A-8D7C-CF11B8F19ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BCAA89-4805-4E0A-8D7C-CF11B8F19ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BCAA89-4805-4E0A-8D7C-CF11B8F19ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BCAA89-4805-4E0A-8D7C-CF11B8F19ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

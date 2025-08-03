@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using myapp_customerwebapp_azure.Models;
 
 namespace myapp_customerwebapp_azure.Server.Controllers
 {
@@ -10,16 +9,10 @@ namespace myapp_customerwebapp_azure.Server.Controllers
     public class DashboardController : ControllerBase
     {
         [HttpGet("loadCustomers")]
-        public List<Customer> Load()
+        public async Task<IActionResult> GetDashboard()
         {
-            List<Customer> customers= new List<Customer>
-            {
-                new Customer { Name = "Alice", Product = "Laptop", Order = 1, Status = true },
-                new Customer { Name = "Bob", Product = "Smartphone", Order = 2, Status = false },
-                new Customer { Name = "Charlie", Product = "Tablet", Order = 3, Status = true }
-            };
-
-            return customers;
+            var dto = await _dashboardService.GetDashboardAsync();
+            return Ok(dto);
         }
     }
 }

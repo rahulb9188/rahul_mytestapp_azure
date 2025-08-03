@@ -1,34 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using myapp_customerwebapp_azure.Application.Interfaces.Services;
-using myapp_customerwebapp_azure.Application.Models.Request;
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace myapp_customerwebapp_azure.Server.Controllers
+namespace myapp_customerwebapp_azure.Shared.Security
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AccountController : ControllerBase
+    public class JwtTokenGenerator : IJwtTokenGenerator
     {
-        private readonly IAuthService _authService;
-        public AccountController(IAuthService authService)
-        {
-            _authService = authService;
-        }
-
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
-        {
-            var token = await _authService.LoginAsync(request);
-            if (token == null)
-                return Unauthorized();
-
-            return Ok(new { token });
-        }
-
-        private string GenerateJwtToken(string username)
+        public string GenerateToken(string username)
         {
             var claims = new[]
             {

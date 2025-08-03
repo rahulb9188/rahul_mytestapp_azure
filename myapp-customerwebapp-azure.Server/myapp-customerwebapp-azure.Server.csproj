@@ -22,10 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\myapp-customerwebapp-azure.Application\myapp-customerwebapp-azure.Application.csproj" />
     <ProjectReference Include="..\myapp-customerwebapp-azure.client\myapp-customerwebapp-azure.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\myapp-customerwebapp-azure.Models\myapp-customerwebapp-azure.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

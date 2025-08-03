@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>myapp_customerwebapp_azure.Models</RootNamespace>
+    <RootNamespace>myapp_customerwebapp_azure.Domain</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Request\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>

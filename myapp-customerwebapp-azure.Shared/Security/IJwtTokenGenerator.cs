@@ -8,6 +8,8 @@ namespace myapp_customerwebapp_azure.Shared.Security
 {
     public interface IJwtTokenGenerator
     {
-        string GenerateToken(string username);
+        string GenerateAccessToken(string username);
+        string GenerateRefreshToken(string username);
+
     }
 }

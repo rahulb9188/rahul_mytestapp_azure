@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using myapp_customerwebapp_azure.Domain.Entities;
 
 namespace myapp_customerwebapp_azure.Application.Interfaces.Repositories
 {
     public interface IUserRepository
     {
-        //Task<CustomerlyUser?> GetByEmailAsync(string email);
-        //Task AddUserAsync(CustomerlyUser user);
-        // Add other user-related methods if needed
+        Task<Customerly_User?> GetByEmailAsync(string email);
+        Task AddAsync(Customerly_User user);
     }
 }

@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { AuthService } from './auth.service';
 import { Login } from '../shared/models/login.model';
 import { ToastrService } from 'ngx-toastr';
+import { Store } from '@ngrx/store';
+import { loginSuccess } from '../shared/auth.store';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +16,7 @@ export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   isloginFailed!: boolean;
   constructor(private fb: FormBuilder, private router: Router,
-    private loginService: AuthService, private toastr: ToastrService) {
+    private loginService: AuthService, private toastr: ToastrService,private store:Store) {
 
   }
 
@@ -32,6 +34,14 @@ export class LoginComponent implements OnInit {
   login() {
     this.loginService.login(this.loginForm.value).subscribe({
       next: (res) => {
+        const loggedInUser = {
+          username: res?.loginUser?.userName,
+          email: res?.loginUser?.email,
+          name: res?.loginUser?.name
+          //accessToken: res.accessToken,
+          //refreshToken: res.refreshToken
+        };
+        this.store.dispatch(loginSuccess({ user: loggedInUser }));
         console.log('Login successful', res);
          this.toastr.success('Hello world!','', {
           timeOut: 3000,
@@ -58,5 +68,10 @@ export class LoginComponent implements OnInit {
 
 
   }
+
+  register() { 
+    this.router.navigate(['/register']);
+  }
+
 
 }

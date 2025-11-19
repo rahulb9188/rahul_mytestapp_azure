@@ -1,6 +1,14 @@
-
+﻿
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using myapp_customerwebapp_azure.Application.Interfaces.Repositories;
+using myapp_customerwebapp_azure.Application.Interfaces.Services;
+using myapp_customerwebapp_azure.Application.Services;
+using myapp_customerwebapp_azure.Infrastructure;
+using myapp_customerwebapp_azure.Infrastructure.Data;
+using myapp_customerwebapp_azure.Infrastructure.Repositories;
+using myapp_customerwebapp_azure.Shared.Security;
 using Serilog;
 using System.Text;
 
@@ -63,8 +71,14 @@ namespace myapp_customerwebapp_azure.Server
             });
 
             builder.Services.AddAuthorization();
-
-            // Add services to the container.
+            builder.Services.AddDbContext<CustomerlyDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging() //  shows full values
+           .LogTo(Console.WriteLine, LogLevel.Information));
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IDashboardService, DashboardService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+            // Add services to the container
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

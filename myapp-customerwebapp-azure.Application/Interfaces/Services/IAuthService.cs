@@ -1,4 +1,5 @@
-﻿using myapp_customerwebapp_azure.Application.Models.Request;
+﻿using myapp_customerwebapp_azure.Application.Models;
+using myapp_customerwebapp_azure.Application.Models.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace myapp_customerwebapp_azure.Application.Interfaces.Services
 {
     public interface IAuthService
     {
-        Task<string?> LoginAsync(LoginRequest request);
+        Task<TokenResponse?> LoginAsync(LoginRequest request);
+        Task<bool> RegisterAsync(RegisterRequest request);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using myapp_customerwebapp_azure.Application.Interfaces.Services;
+using myapp_customerwebapp_azure.Application.Models;
 using myapp_customerwebapp_azure.Application.Models.Request;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -21,11 +22,21 @@ namespace myapp_customerwebapp_azure.Server.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            var token = await _authService.LoginAsync(request);
+            TokenResponse token = await _authService.LoginAsync(request);
             if (token == null)
                 return Unauthorized();
 
-            return Ok(new { token });
+            return Ok(token);
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+        {
+            var result = await _authService.RegisterAsync(request);
+            if (!result)
+                return BadRequest("Registration failed");
+
+            return Ok("Registered successfully, pending approval");
         }
 
         private string GenerateJwtToken(string username)

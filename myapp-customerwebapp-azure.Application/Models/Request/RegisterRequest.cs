@@ -11,7 +11,8 @@ namespace myapp_customerwebapp_azure.Application.Models.Request
         public string FullName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string UserType { get; set; } // "Customer" or "Staff"
-        public string RequestedRole { get; set; } // Only for staff: "SalesRep", "Support", etc.
+        //public string ConfirmPassword { get; set; }
+        //public string UserType { get; set; }
+        public int? Role { get; set; }
     }
 }

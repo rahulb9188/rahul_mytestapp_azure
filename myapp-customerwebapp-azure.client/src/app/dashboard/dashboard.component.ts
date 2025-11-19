@@ -23,6 +23,7 @@ export class DashboardComponent {
 
   loadCustomers() {
     this.dashboardService.getCustomers().subscribe((res) => {
+      console.log(res);
       this.customers = res;
     })
   }

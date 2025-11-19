@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Configuration\" />
     <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Repositories\Implementations\" />
@@ -21,6 +20,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\myapp-customerwebapp-azure.Application\myapp-customerwebapp-azure.Application.csproj" />
+    <ProjectReference Include="..\myapp-customerwebapp-azure.Domain\myapp-customerwebapp-azure.Domain.csproj" />
   </ItemGroup>
 
 </Project>

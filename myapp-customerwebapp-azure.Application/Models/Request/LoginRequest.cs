@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace myapp_customerwebapp_azure.Application.Models.Request
 {
-    public class LoginRequest
-    {
-        public string Email { get; set; } = null!;
-        public string Password { get; set; } = null!;
-    }
+    //public class LoginRequest
+    //{
+    //    public string Email { get; set; } = null!;
+    //    public string Password { get; set; } = null!;
+    //}
 }

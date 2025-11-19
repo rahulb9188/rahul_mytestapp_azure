@@ -4,34 +4,73 @@ import { Customer } from "../shared/models/customer.model";
 import { Common } from '../shared/constants/common.constant';
 import { Login } from "../shared/models/login.model";
 import { Injectable } from "@angular/core";
+import { RegisterRequest } from "../shared/models/register.model";
 @Injectable()
 export class AuthService {
 
-    private readonly baseUrl: string;
+  private readonly baseUrl: string;
+  private readonly ACCESS_TOKEN_KEY = 'access_token';
+  private readonly REFRESH_TOKEN_KEY = 'refresh_token';
 
-    constructor(private client: HttpClient) {
-        this.baseUrl = Common.BaseUrl;
-    }
+  constructor(private client: HttpClient) {
+    this.baseUrl = Common.BaseUrl;
+  }
 
-    login(login: Login) {
-        let url = `${this.baseUrl}/account/login`;
-        return this.client.post<Observable<Customer[]>>(url, login).pipe(
-            tap((response: any) => {
-                localStorage.setItem('authToken', response.token); // Store the token
-            })
-        );;
-    }
+  login(login: Login) {
+    let url = `${this.baseUrl}/account/login`;
+    return this.client.post<Observable<Customer[]>>(url, login).pipe(
+      tap((response: any) => {
+        //localStorage.setItem('authToken', response.token); // Store the token
+        this.saveTokens(response.accessToken, response.refreshToken);
+      })
+    );;
+  }
 
-    logout() {
-        localStorage.removeItem('authToken');
-    }
+  register(data: RegisterRequest) {
+    console.log(data);
+    let url = `${this.baseUrl}/account/register`;
+    return this.client.post(url, data);
+  }
 
-    getToken(): string | null {
-        return localStorage.getItem('authToken');
-    }
+  logout() {
+    localStorage.removeItem(this.ACCESS_TOKEN_KEY);
+    localStorage.removeItem(this.REFRESH_TOKEN_KEY);
+  }
 
-    isAuthenticated(): boolean {
-        return !!this.getToken();
-    }
+  getToken(): string | null {
+    return localStorage.getItem(this.ACCESS_TOKEN_KEY);
+  }
+
+  getRefreshToken(): string | null {
+    return localStorage.getItem(this.REFRESH_TOKEN_KEY);
+  }
+
+  public saveTokens(accessToken: string, refreshToken: string): void {
+    localStorage.setItem(this.ACCESS_TOKEN_KEY, accessToken);
+    localStorage.setItem(this.REFRESH_TOKEN_KEY, refreshToken);
+  }
+
+  //  private decodeToken(token: string) {
+  //  try {
+  //    return jwt_decode(token);
+  //  } catch (error) {
+  //    console.error('Invalid token', error);
+  //    return null;
+  //  }
+  //}
+
+  isAuthenticated(): boolean {
+    return !!this.getToken();
+  }
+
+  public refreshToken(refreshToken: string): Observable<{ accessToken: string, refreshToken: string }> {
+    const url = `${this.baseUrl}/auth/refresh`;
+
+    return this.client.post<{ accessToken: string, refreshToken: string }>(url, { refreshToken }).pipe(
+      tap(response => {
+        this.saveTokens(response.accessToken, response.refreshToken);
+      })
+    );
+  }
 
 }

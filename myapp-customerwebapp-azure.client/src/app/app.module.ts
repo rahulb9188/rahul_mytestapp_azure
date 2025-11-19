@@ -12,12 +12,18 @@ import { SharedModule } from './shared/shared.module';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthInterceptor } from './auth.interceptor';
+import { RegisterComponent } from './register/register.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MaterialModule } from './material.module';
+import { StoreModule } from '@ngrx/store';
+import { userReducer } from './shared/auth.store';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
@@ -25,10 +31,15 @@ import { AuthInterceptor } from './auth.interceptor';
     ReactiveFormsModule,
     SharedModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    StoreModule.forRoot({
+      user: userReducer
+    }),
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [AuthService, DashboardService,
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

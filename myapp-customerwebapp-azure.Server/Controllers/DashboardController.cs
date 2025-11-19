@@ -1,13 +1,19 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using myapp_customerwebapp_azure.Application.Interfaces.Repositories;
 
 namespace myapp_customerwebapp_azure.Server.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class DashboardController : ControllerBase
     {
+        private readonly IDashboardService _dashboardService;
+        public DashboardController(IDashboardService dashboardService)
+        {
+            _dashboardService = dashboardService;
+        }
         [HttpGet("loadCustomers")]
         public async Task<IActionResult> GetDashboard()
         {

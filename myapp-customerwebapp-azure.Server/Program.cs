@@ -18,11 +18,19 @@ namespace myapp_customerwebapp_azure.Server
     {
         public static void Main(string[] args)
         {
+            var logPath = Path.Combine(
+    Environment.GetEnvironmentVariable("HOME") ?? ".",
+    "LogFiles",
+    "myapp",
+    "log-.txt");
+
+            Directory.CreateDirectory(Path.GetDirectoryName(logPath));
+
             Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .Enrich.WithThreadId()
     .WriteTo.File(
-        path: "Logs/log-.txt",
+        path: logPath,
         rollingInterval: RollingInterval.Hour,
         outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} | ThreadId: {ThreadId} | {Level:u3}] {Message:lj}{NewLine}{Exception}"
     )
@@ -96,13 +104,13 @@ namespace myapp_customerwebapp_azure.Server
             }
 
             app.UseHttpsRedirection();
-            
+
             app.UseRouting();
             app.UseCors(MyAllowSpecificOrigins);
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
-            
+
             app.MapFallbackToFile("/index.html");
 
             app.Run();

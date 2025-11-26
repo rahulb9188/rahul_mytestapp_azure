@@ -1,5 +1,7 @@
+import { environment } from '../../../environments/environment';
+
 export const Common = {
-    BaseUrl: 'http://localhost:5138/api'  // or your actual API URL
+  BaseUrl: environment.apiBaseUrl  // or your actual API URL
 };
 export interface Role {
   key: number;

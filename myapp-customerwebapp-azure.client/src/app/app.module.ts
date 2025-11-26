@@ -17,6 +17,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MaterialModule } from './material.module';
 import { StoreModule } from '@ngrx/store';
 import { userReducer } from './shared/auth.store';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { SharedMaterialModule } from './shared/modules/shared-material.module';
 
 @NgModule({
   declarations: [
@@ -26,20 +28,21 @@ import { userReducer } from './shared/auth.store';
     RegisterComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule, HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     SharedModule,
+    SharedMaterialModule,
     ToastrModule.forRoot(),
     StoreModule.forRoot({
       user: userReducer
     }),
-    BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    SidebarComponent 
   ],
   providers: [AuthService, DashboardService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
-    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

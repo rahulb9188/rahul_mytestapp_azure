@@ -26,6 +26,10 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
+      - name: Show angular.json used by build
+        run: cd myapp-customerwebapp-azure.client cat angular.json | grep maximumError
+
+
       - name: dotnet publish
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
@@ -62,4 +66,5 @@ jobs:
           app-name: 'mytestapp'
           slot-name: 'Production'
           package: .
+
           

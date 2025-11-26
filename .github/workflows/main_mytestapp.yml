@@ -26,9 +26,11 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
-      - name: Show angular.json used by build
-        run: cd myapp-customerwebapp-azure.client cat angular.json | grep maximumError
-
+       - name: Show angular.json full path and maximumError
+  run: |
+    $fullPath = Resolve-Path angular.json
+    Write-Host "Angular config file path: $fullPath"
+    Select-String -Path $fullPath -Pattern "maximumError"
 
       - name: dotnet publish
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
@@ -68,3 +70,4 @@ jobs:
           package: .
 
           
+

@@ -4,3 +4,8 @@
   fill: white;
   filter: brightness(0) invert(1); /* Makes black SVG white */
 }
+
+.mat-nav-list .mat-list-item {
+  display: flex !important; /* Material expects flex layout */
+  width: 100% !important;
+}

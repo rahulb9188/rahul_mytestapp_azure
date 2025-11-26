@@ -44,3 +44,10 @@ export const selectCurrentUser = createSelector(
   selectUserState,
   (state) => state.user
 );
+
+export const selectIsLoggedIn = createSelector(
+  selectCurrentUser,
+  (user) => !!user 
+);
+
+

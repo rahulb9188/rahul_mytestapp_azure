@@ -1,36 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
-}
+import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+import { selectIsLoggedIn } from './shared/auth.store';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public forecasts: WeatherForecast[] = [];
-
-  constructor(private http: HttpClient) {}
+  isLoggedIn$: Observable<boolean>;
+  constructor(private store: Store) {
+    this.isLoggedIn$ = this.store.select(selectIsLoggedIn);
+}
 
   ngOnInit() {
     //this.getForecasts();
-  }
-
-  getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
-      (result) => {
-        this.forecasts = result;
-      },
-      (error) => {
-        console.error(error);
-      }
-    );
   }
 
   title = 'myapp-customerwebapp-azure.client';

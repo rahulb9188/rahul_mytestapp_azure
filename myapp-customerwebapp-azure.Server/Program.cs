@@ -25,6 +25,7 @@ namespace myapp_customerwebapp_azure.Server
     "myapp",
     "log-.txt");
 
+
             Directory.CreateDirectory(Path.GetDirectoryName(logPath));
 
             Log.Logger = new LoggerConfiguration()
@@ -38,6 +39,9 @@ namespace myapp_customerwebapp_azure.Server
     .CreateBootstrapLogger(); // Use bootstrap logger to catch early logs
 
             var builder = WebApplication.CreateBuilder(args);
+
+            var connStr = builder.Configuration.GetConnectionString("DefaultConnection");
+            Log.Information("Using connection string: {ConnStr}", connStr);
 
             // Replace default logging with Serilog
             builder.Host.UseSerilog((context, services, configuration) =>

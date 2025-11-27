@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
 using myapp_customerwebapp_azure.Application.Interfaces.Repositories;
 using myapp_customerwebapp_azure.Application.Interfaces.Services;
@@ -80,7 +81,13 @@ namespace myapp_customerwebapp_azure.Server
 
             builder.Services.AddAuthorization();
             builder.Services.AddDbContext<CustomerlyDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging() //  shows full values
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging()
+    .LogTo(Log.Logger.Information,                    // Log to Serilog
+                new[] { DbLoggerCategory.Database.Command.Name,
+                        DbLoggerCategory.Database.Connection.Name },
+                LogLevel.Error,                              // Only errors
+                DbContextLoggerOptions.SingleLine
+                )    //  shows full values
            .LogTo(Console.WriteLine, LogLevel.Information));
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IDashboardService, DashboardService>();

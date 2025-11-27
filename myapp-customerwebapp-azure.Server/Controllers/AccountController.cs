@@ -3,6 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using myapp_customerwebapp_azure.Application.Interfaces.Services;
 using myapp_customerwebapp_azure.Application.Models;
 using myapp_customerwebapp_azure.Application.Models.Request;
+using Serilog;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -22,6 +23,8 @@ namespace myapp_customerwebapp_azure.Server.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
+            Log.Information("Login action called");
+            Log.Information("Login attempt for user: {Email}", request.Email);
             TokenResponse token = await _authService.LoginAsync(request);
             if (token == null)
                 return Unauthorized();

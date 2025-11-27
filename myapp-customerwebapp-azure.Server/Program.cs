@@ -93,7 +93,6 @@ namespace myapp_customerwebapp_azure.Server
                        .LogTo(Log.Logger.Information,
                               new[] { DbLoggerCategory.Database.Command.Name, DbLoggerCategory.Database.Connection.Name },
                               LogLevel.Error, DbContextLoggerOptions.SingleLine)
-                       .LogTo(Console.WriteLine, LogLevel.Information)
             );
 
             // --- Dependency Injection ---

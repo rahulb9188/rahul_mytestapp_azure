@@ -88,7 +88,11 @@ namespace myapp_customerwebapp_azure.Server
 
             // --- EF Core: Use SQL Authentication explicitly ---
             builder.Services.AddDbContext<CustomerlyDbContext>(options =>
-                options.UseSqlServer(connStr, sqlOptions => sqlOptions.EnableRetryOnFailure())
+                options.UseSqlServer(connStr, sqlOptions => sqlOptions.EnableRetryOnFailure(
+                    maxRetryCount: 5,
+        maxRetryDelay: TimeSpan.FromSeconds(30),
+        errorNumbersToAdd: null
+                    ))
                        .EnableSensitiveDataLogging()
                        .LogTo(Log.Logger.Information,
                               new[] { DbLoggerCategory.Database.Command.Name, DbLoggerCategory.Database.Connection.Name },

@@ -1,7 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using myapp_customerwebapp_azure.Domain.Entities;
+using System;
+using System.Collections.Generic;
 
 namespace myapp_customerwebapp_azure.Infrastructure.Data;
 
@@ -27,10 +29,6 @@ public partial class CustomerlyDbContext : DbContext
     public virtual DbSet<Customerly_Status> Customerly_Statuses { get; set; }
 
     public virtual DbSet<Customerly_User> Customerly_Users { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=tcp:customerly.database.windows.net,1433;Initial Catalog=customerly;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

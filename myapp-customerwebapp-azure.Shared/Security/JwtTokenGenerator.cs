@@ -22,12 +22,14 @@ namespace myapp_customerwebapp_azure.Shared.Security
 
         private static readonly Dictionary<string, string> ValidRefreshTokens = new();
 
-        public string GenerateAccessToken(string username)
+        public string GenerateAccessToken(string username,string role)
         {
             var claims = new[]
             {
             new Claim(JwtRegisteredClaimNames.Sub, username),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Name,username),
+            new Claim(ClaimTypes.Role,role),
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SecretKey));

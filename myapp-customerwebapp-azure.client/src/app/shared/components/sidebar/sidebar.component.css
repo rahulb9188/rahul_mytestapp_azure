@@ -1,7 +1,18 @@
 .sidenav-container {
   height: 100vh;
+  width: 100%;
+  /* Remove display:flex, top, left */
 }
 
 mat-sidenav {
   width: 250px;
 }
+
+mat-sidenav-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+

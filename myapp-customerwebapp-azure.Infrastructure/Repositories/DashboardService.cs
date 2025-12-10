@@ -2,11 +2,6 @@
 using myapp_customerwebapp_azure.Application.Interfaces.Repositories;
 using myapp_customerwebapp_azure.Application.Models.Response;
 using myapp_customerwebapp_azure.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace myapp_customerwebapp_azure.Infrastructure.Repositories
 {

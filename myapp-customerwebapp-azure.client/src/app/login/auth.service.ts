@@ -5,6 +5,7 @@ import { Common } from '../shared/constants/common.constant';
 import { Login } from "../shared/models/login.model";
 import { Injectable } from "@angular/core";
 import { RegisterRequest } from "../shared/models/register.model";
+import { User } from "../shared/models/user.model";
 @Injectable()
 export class AuthService {
 
@@ -20,14 +21,12 @@ export class AuthService {
     let url = `${this.baseUrl}/account/login`;
     return this.client.post<Observable<Customer[]>>(url, login).pipe(
       tap((response: any) => {
-        //localStorage.setItem('authToken', response.token); // Store the token
         this.saveTokens(response.accessToken, response.refreshToken);
       })
     );;
   }
 
   register(data: RegisterRequest) {
-    console.log(data);
     let url = `${this.baseUrl}/account/register`;
     return this.client.post(url, data);
   }
@@ -43,6 +42,11 @@ export class AuthService {
 
   getRefreshToken(): string | null {
     return localStorage.getItem(this.REFRESH_TOKEN_KEY);
+  }
+
+  getProfile(): Observable<User> {
+    let url = `${this.baseUrl}/account/profile`;
+    return this.client.get<User>(url);
   }
 
   public saveTokens(accessToken: string, refreshToken: string): void {
@@ -64,7 +68,7 @@ export class AuthService {
   }
 
   public refreshToken(refreshToken: string): Observable<{ accessToken: string, refreshToken: string }> {
-    const url = `${this.baseUrl}/auth/refresh`;
+    const url = `${this.baseUrl}/account/refresh`;
 
     return this.client.post<{ accessToken: string, refreshToken: string }>(url, { refreshToken }).pipe(
       tap(response => {

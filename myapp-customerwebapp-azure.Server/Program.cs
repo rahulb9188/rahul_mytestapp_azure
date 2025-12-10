@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
+using myapp_customerwebapp_azure.Application.Interfaces;
 using myapp_customerwebapp_azure.Application.Interfaces.Repositories;
 using myapp_customerwebapp_azure.Application.Interfaces.Services;
 using myapp_customerwebapp_azure.Application.Services;
@@ -101,6 +102,7 @@ namespace myapp_customerwebapp_azure.Server
 
             // --- Dependency Injection ---
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IDashboardService, DashboardService>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();

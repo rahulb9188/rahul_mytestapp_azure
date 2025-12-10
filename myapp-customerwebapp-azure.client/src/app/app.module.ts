@@ -1,5 +1,5 @@
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,12 +13,14 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthInterceptor } from './auth.interceptor';
 import { RegisterComponent } from './register/register.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialModule } from './material.module';
-import { StoreModule } from '@ngrx/store';
-import { userReducer } from './shared/auth.store';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { Store, StoreModule } from '@ngrx/store';
 import { SharedMaterialModule } from './shared/modules/shared-material.module';
+import { authReducer } from './shared/store/auth.reducer';
+import { AuthEffects } from './shared/store/auth.effects';
+import { EffectsModule } from '@ngrx/effects';
+import { checkAuth } from './shared/store/auth.actions';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -35,11 +37,10 @@ import { SharedMaterialModule } from './shared/modules/shared-material.module';
     SharedModule,
     SharedMaterialModule,
     ToastrModule.forRoot(),
-    StoreModule.forRoot({
-      user: userReducer
-    }),
+    StoreModule.forRoot({ auth: authReducer }),
+    EffectsModule.forRoot([AuthEffects]),
     MaterialModule,
-    SidebarComponent 
+    SidebarComponent
   ],
   providers: [AuthService, DashboardService,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

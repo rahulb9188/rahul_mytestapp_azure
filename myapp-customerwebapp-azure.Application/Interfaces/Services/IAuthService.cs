@@ -12,5 +12,6 @@ namespace myapp_customerwebapp_azure.Application.Interfaces.Services
     {
         Task<TokenResponse?> LoginAsync(LoginRequest request);
         Task<bool> RegisterAsync(RegisterRequest request);
+        Task<TokenResponse> RefreshTokenAsync(string accessToken, string refreshToken);
     }
 }

@@ -1,9 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using myapp_customerwebapp_azure.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using myapp_customerwebapp_azure.Infrastructure;
 
 namespace myapp_customerwebapp_azure.Infrastructure.Data;
 
@@ -29,6 +27,12 @@ public partial class CustomerlyDbContext : DbContext
     public virtual DbSet<Customerly_Status> Customerly_Statuses { get; set; }
 
     public virtual DbSet<Customerly_User> Customerly_Users { get; set; }
+
+    public virtual DbSet<Customerly_UserRole> Customerly_UserRoles { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Data Source=customerly.database.windows.net,1433;Initial Catalog=customerly;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -74,10 +78,8 @@ public partial class CustomerlyDbContext : DbContext
 
         modelBuilder.Entity<Customerly_Role>(entity =>
         {
-            entity.HasKey(e => e.RoleId).HasName("PK__Customer__3214EC0732D4DA66");
+            entity.HasKey(e => e.RoleId);
 
-            entity.Property(e => e.RoleId).ValueGeneratedNever();
-            entity.Property(e => e.Id).ValueGeneratedOnAdd();
             entity.Property(e => e.Name)
                 .HasMaxLength(10)
                 .IsUnicode(false);
@@ -99,6 +101,7 @@ public partial class CustomerlyDbContext : DbContext
 
             entity.HasIndex(e => e.Email, "UQ__Customer__A9D10534B6F62E8E").IsUnique();
 
+            entity.Property(e => e.UserId).HasMaxLength(50);
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
@@ -106,10 +109,23 @@ public partial class CustomerlyDbContext : DbContext
             entity.Property(e => e.FullName).HasMaxLength(100);
             entity.Property(e => e.IsApproved).HasDefaultValue(false);
             entity.Property(e => e.PasswordHash).HasMaxLength(255);
+            entity.Property(e => e.RefreshTokenExpires).HasColumnType("datetime");
+        });
 
-            entity.HasOne(d => d.RoleNavigation).WithMany(p => p.Customerly_Users)
-                .HasForeignKey(d => d.Role)
-                .HasConstraintName("FK_Roles_Users_RoleID");
+        modelBuilder.Entity<Customerly_UserRole>(entity =>
+        {
+            entity.HasKey(e => e.UserRoleID).IsClustered(false);
+
+            entity.Property(e => e.UserID).HasMaxLength(50);
+
+            entity.HasOne(d => d.Role).WithMany(p => p.Customerly_UserRoles)
+                .HasForeignKey(d => d.RoleID)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Customerly_UserRoles_Customerly_Roles");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Customerly_UserRoles)
+                .HasForeignKey(d => d.UserID)
+                .HasConstraintName("FK_UserRole_Users");
         });
 
         OnModelCreatingPartial(modelBuilder);

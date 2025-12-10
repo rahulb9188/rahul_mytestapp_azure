@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace myapp_customerwebapp_azure.Domain.Entities;
+namespace myapp_customerwebapp_azure.Infrastructure;
 
 public partial class Customerly_User
 {
-    public int UserId { get; set; }
+    public string UserId { get; set; } = null!;
 
     public string? FullName { get; set; }
 
@@ -19,5 +19,9 @@ public partial class Customerly_User
 
     public DateTime? CreatedAt { get; set; }
 
-    public virtual Customerly_Role? RoleNavigation { get; set; }
+    public string? RefreshToken { get; set; }
+
+    public DateTime? RefreshTokenExpires { get; set; }
+
+    public virtual ICollection<Customerly_UserRole> Customerly_UserRoles { get; set; } = new List<Customerly_UserRole>();
 }

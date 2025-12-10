@@ -5,7 +5,25 @@
   filter: brightness(0) invert(1); /* Makes black SVG white */
 }
 
-.mat-nav-list .mat-list-item {
-  display: flex !important; /* Material expects flex layout */
-  width: 100% !important;
+/*.mat-nav-list .mat-list-item {
+  display: flex !important;*/ /* Material expects flex layout */
+  /*width: 100% !important;
+}*/
+
+body, app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+mat-sidenav-container {
+  height: 100vh; /* full viewport height */
+  width: 100%;
+  /* no flex here */
+}
+
+mat-sidenav-content {
+  overflow-y: auto;
 }

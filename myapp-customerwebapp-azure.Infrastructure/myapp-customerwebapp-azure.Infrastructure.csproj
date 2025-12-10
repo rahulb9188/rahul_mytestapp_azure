@@ -9,8 +9,9 @@
 
   <ItemGroup>
     <Folder Include="Configuration\" />
-    <Folder Include="Repositories\Interfaces\" />
+    <Folder Include="Data\" />
     <Folder Include="Repositories\Implementations\" />
+    <Folder Include="Repositories\Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>

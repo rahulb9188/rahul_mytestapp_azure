@@ -22,15 +22,6 @@
       <input matInput type="password" formControlName="confirmPassword" required />
     </mat-form-field>
 
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Role</mat-label>
-      <mat-select formControlName="role" required>
-        <mat-option *ngFor="let role of roles" [value]="role.key">
-          {{ role.value }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-
     <div style="display: flex; gap: 16px;">
     <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid">
       Register

@@ -9,16 +9,13 @@ export class AuthGuard {
   constructor(private router: Router,private authService:AuthService) {}
 
   isAuthenticated(): boolean {
-    // Replace with your actual auth check logic
-    return !!sessionStorage.getItem('token');
+    return !!sessionStorage.getItem('access_token');
   }
 
   canActivate(): boolean | UrlTree {
     if (this.authService.isAuthenticated()) {
       return true;
-    } else {
-      this.router.navigate(['/login']);
-      return false;
     }
+    return this.router.parseUrl('/login');
   }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace myapp_customerwebapp_azure.Domain.Entities;
+namespace myapp_customerwebapp_azure.Infrastructure;
 
 public partial class Customerly_Product
 {
